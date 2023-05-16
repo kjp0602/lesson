@@ -1,5 +1,7 @@
 package date230516;
 
+import java.text.NumberFormat;
+
 public class Products implements PrintInfoAble{
 
     public int productNumber;
@@ -8,9 +10,13 @@ public class Products implements PrintInfoAble{
     public long price;
 
 
+    public String getPriceFormat() {
+        return NumberFormat.getInstance().format(price);
+    }
+
     @Override
     public String toString() {
-        return "제품번호: " + productNumber + ", 제품명: " + name + ", 회사명: " + company + ", 가격: " + price;
+        return "제품번호: " + productNumber + ", 제품명: " + name + ", 회사명: " + company + ", 가격: " + getPriceFormat();
     }
 
     @Override
