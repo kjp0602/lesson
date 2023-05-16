@@ -1,9 +1,9 @@
 package date230516;
 
 public class Employees implements PrintInfoAble {
-    private int number;
-    private String name;
-    private String phoneNumber;
+    public int number;
+    public String name;
+    public String phoneNumber;
 
 
     @Override

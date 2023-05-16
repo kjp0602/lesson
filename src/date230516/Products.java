@@ -4,7 +4,6 @@ public class Products implements PrintInfoAble{
 
     public int productNumber;
     public String name;
-
     public String company;
     public long price;
 
