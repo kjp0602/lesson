@@ -11,8 +11,10 @@ public class Employees implements PrintInfoAble {
         return "사원번호: " + number + ", 사원명: " + name + ", 전화번호: " + phoneNumber;
     }
 
+
     @Override
     public void printInfo() {
         System.out.println(toString());
     }
+
 }
