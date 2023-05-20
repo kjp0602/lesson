@@ -37,7 +37,7 @@ public class Employee {
      * @param salary
      */
     public void initSalary(long salary) {
-        if(!this.isInitSalary) {
+        if (!this.isInitSalary) {
             this.salary = salary;
             this.isInitSalary = true;
             System.out.println("init salary success!!: " + this.salary);
@@ -48,7 +48,7 @@ public class Employee {
     }
 
     public void printOncePay() {
-        long oncePay = (long) ((double)this.salary / 12d - ((double) this.salary / 12d * 0.08d));
+        long oncePay = (long) ((double) this.salary / 12d - ((double) this.salary / 12d * 0.08d));
         System.out.println("급여: " + oncePay);
     }
 
@@ -56,17 +56,18 @@ public class Employee {
      * 퍼센트로 연봉 올리기
      */
     public void upSalary(double percent) {
-        if(percent > this.salaryPersent * 100) {
+        if (percent > this.salaryPersent * 100) {
             System.out.println("to much percent for 2.5% ");
         } else {
-            this.salary = this.salary + (long)(this.salary * percent / 100);
+            this.salary = this.salary + (long) (this.salary * percent / 100);
         }
     }
+
     /**
      * 금액을 더하는 방법
      */
     public void upSalary(long plus) {
-        if(plus > (long)(this.salary * this.salaryPersent)) {
+        if (plus > (long) (this.salary * this.salaryPersent)) {
             System.out.println("to much plus for 2.5% ");
         } else {
             this.salary = this.salary + plus;
