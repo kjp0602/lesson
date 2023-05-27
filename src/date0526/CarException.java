@@ -31,6 +31,7 @@ public class CarException extends Exception{
                 break;
             case ALREADY :
                 message = "이미 주차중입니다.";
+                break;
             case ETC :
                 message = "기타 사유";
                 break;

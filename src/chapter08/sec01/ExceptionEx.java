@@ -10,12 +10,8 @@ public class ExceptionEx {
                 System.out.println(res);
                 num--;
             }
-        } catch (ArrayIndexOutOfBoundsException e) {
-            e.printStackTrace();
-        } catch (ArithmeticException e) {
-            e.printStackTrace();
-            System.out.println(e.getMessage());
         } catch (Exception e) {
+            System.out.println("etc!!!!!!!!!!!!!!!");
             e.printStackTrace();
         } finally {
             System.out.println("이곳은 언제나 시행되는 블록입니다.");
