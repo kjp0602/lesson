@@ -16,7 +16,8 @@ public class Main {
          */
         Employee employee1 = new Developer("김원희");
         Employee employee2 = new Design("송제윤");
-        Employee[] emps = {employee1, employee2};
+        Employee employee3 =new Lake("박호수");
+        Employee[] emps = {employee1, employee2,employee3};
         for(int i =0; i<emps.length;i++){
             emps[i].in();
             emps[i].work();

@@ -15,7 +15,7 @@ package homework.date0520;
 public class Employee {
     private int number;
     private String name;
-    private String dept; //부서
+    private String dept;
     private String rank;
     private String gender;
     private long salary;
@@ -24,11 +24,17 @@ public class Employee {
     private double salaryPersent = 0.025; //2.5%
     private boolean isInitSalary = false;
 
-    public Employee(int number, String name, String dept, String rank) {
+    public Employee(int number, String name, String dept, String rank, String gender, String address, long salary) {
         this.number = number;
         this.name = name;
         this.dept = dept;
         this.rank = rank;
+        this.gender=gender;
+        this.address=address;
+        this.salary=salary;
+        this.phoneNumber=phoneNumber;
+
+
     }
 
     /**
@@ -36,6 +42,8 @@ public class Employee {
      *
      * @param salary
      */
+
+
     public void initSalary(long salary) {
         if (!this.isInitSalary) {
             this.salary = salary;
@@ -63,6 +71,10 @@ public class Employee {
         }
     }
 
+
+    public void employeePrinter() {
+        System.out.println("이름: " + name + ", 사원번호: " + number + ", 폰번호: " + phoneNumber + ", 성별: " + gender);
+    }
     /**
      * 금액을 더하는 방법
      */
@@ -80,4 +92,9 @@ public class Employee {
     public void setSalaryPersent(double salaryPersent) {
         this.salaryPersent = salaryPersent / 100;
     }
+
+
+
 }
+//출력하는 클래스
+

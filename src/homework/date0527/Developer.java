@@ -10,7 +10,7 @@ public class Developer extends Employee{
     }
 
     public void compile() {
-        System.out.println(this.name + "컴파일하기");
+        System.out.println(this.name + " 컴파일하기");
     }
 
     public void work() {
