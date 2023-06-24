@@ -6,8 +6,9 @@ import java.util.Scanner;
 
 public class Main {
 
-    static List<Category> categories;
-    static List<Menu> list;
+
+    static List <Category> categories;
+    static List <Menu> list;
 
     public static void main(String[] args) {
 
