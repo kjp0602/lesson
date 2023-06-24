@@ -44,7 +44,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-
+        Object obj = new Object();
 
         Bill bill = new Bill();
         while(true) {
